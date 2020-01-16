@@ -1,0 +1,31 @@
+{
+  "name": "local-install",
+  "version": "1.0.0",
+  "description": "Pack and install a local dependency given a folder path",
+  "main": "./dist/index.js",
+  "bin": {
+    "local-install": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "del-cli ./dist",
+    "lint": "tslint --project ./tsconfig.json",
+    "prepack": "npm run clean && npm run lint && npm run build"
+  },
+  "author": "Anthony Cleaver",
+  "license": "ISC",
+  "devDependencies": {
+    "@cleavera/config": "^1.2.0",
+    "@types/node": "^13.1.7",
+    "del-cli": "^3.0.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@cleavera/utils": "^3.4.0",
+    "@types/npm": "^2.0.31",
+    "@types/yargs": "^15.0.0",
+    "npm": "^6.13.6",
+    "yargs": "^15.1.0"
+  }
+}
