@@ -23,7 +23,5 @@ const { _: paths, logLevel }: { _: Array<string>, logLevel: keyof LogLevel } = r
     .argv;
 
 (async(): Promise<void> => {
-    for (const path of paths) {
-        await packageInstall(path, LogLevel[logLevel.toUpperCase() as any] as any); //tslint:disable-line no-any
-    }
+    await packageInstall(paths, LogLevel[logLevel.toUpperCase() as any] as any); //tslint:disable-line no-any
 })();

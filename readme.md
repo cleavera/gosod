@@ -10,12 +10,14 @@ npm install local-install
 
 ## Usage
 
+Gosod will not save the dependencies as it cleans the packages up after running.
+
 ### Programmatically
 
 ```typescript 
 import { LogLevel, packageInstall } from 'gosod';
 
-await packageInstall('../../otherPackage', LogLevel.WARN);
+await packageInstall(['../../otherPackage', '../otherPackage2'], LogLevel.WARN);
 
 ```
 

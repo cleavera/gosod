@@ -2,11 +2,11 @@ import { $isNull, IPromiseRejector, IPromiseResolver, Maybe } from '@cleavera/ut
 import { commands, config } from 'npm';
 import { LOGGER } from './logger';
 
-export function install(path: string): Promise<void> {
+export function install(...paths: Array<string>): Promise<void> {
     return new Promise<void>((resolve: IPromiseResolver<void>, reject: IPromiseRejector): void => {
         config.set('save', false);
 
-        commands.install([path], (error: Maybe<Error> = null): void => {
+        commands.install(paths, (error: Maybe<Error> = null): void => {
             if (!$isNull(error)) {
                 reject(error);
 
