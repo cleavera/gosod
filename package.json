@@ -1,6 +1,6 @@
 {
   "name": "gosod",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Pack and install a local dependency given a folder path",
   "main": "./dist/index.js",
   "bin": {
