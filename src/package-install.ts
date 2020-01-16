@@ -5,7 +5,7 @@ import { install } from './install';
 import { LOGGER } from './logger';
 import { pack } from './pack';
 
-export async function run(path: string, logLevel: LogLevel = LogLevel.INFO): Promise<void> {
+export async function packageInstall(path: string, logLevel: LogLevel = LogLevel.INFO): Promise<void> {
     LOGGER.configure(logLevel);
     await init();
     const packagePath: string = await pack(path);
