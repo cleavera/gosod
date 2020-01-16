@@ -1,4 +1,4 @@
-# Local install
+# Gosod
 
 Use for packing up a local npm dependency and then installing it. 
 

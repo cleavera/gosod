@@ -1,4 +1,4 @@
-import { $isNull, IPromiseRejector, IPromiseResolver, Maybe } from '@cleavera/utils/dist';
+import { $isNull, IPromiseRejector, IPromiseResolver, Maybe } from '@cleavera/utils';
 import { unlink } from 'fs';
 
 export function clean(file: string): Promise<void> {

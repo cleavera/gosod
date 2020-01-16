@@ -2,7 +2,7 @@
 
 //tslint:disable no-console
 
-import { LogLevel } from '@cleavera/utils/dist';
+import { LogLevel } from '@cleavera/utils';
 import { packageInstall } from './package-install';
 
 const { _: paths, logLevel }: { _: Array<string>, logLevel: keyof LogLevel } = require('yargs') //tslint:disable-line no-require-imports no-var-requires

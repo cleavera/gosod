@@ -1,10 +1,10 @@
 {
-  "name": "local-install",
+  "name": "gosod",
   "version": "1.0.0",
   "description": "Pack and install a local dependency given a folder path",
   "main": "./dist/index.js",
   "bin": {
-    "local-install": "./dist/cli.js"
+    "gosod": "./dist/cli.js"
   },
   "scripts": {
     "build": "tsc",
