@@ -13,7 +13,7 @@ npm install local-install
 ### Programmatically
 
 ```typescript 
-import { LogLevel, packageInstall } from 'local-install';
+import { LogLevel, packageInstall } from 'gosod';
 
 await packageInstall('../../otherPackage', LogLevel.WARN);
 
@@ -22,5 +22,5 @@ await packageInstall('../../otherPackage', LogLevel.WARN);
 ### Cli
 
 ```
-local-install ../otherPackage1 ../otherPackage2 --logLevel=warn
+gosod ../otherPackage1 ../otherPackage2 --logLevel=warn
 ```
